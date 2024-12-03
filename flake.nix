@@ -12,10 +12,11 @@
       tidyverse
       reactable
       rstudioapi
-      httpgd
+      httpgd #essential
       here
       lintr #essential
       languageserver #essential
+      clipr
     ];
   in {
     devShells.${system}.default = pkgs.mkShell {
