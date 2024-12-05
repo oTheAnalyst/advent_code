@@ -22,33 +22,18 @@ str(day1)
 
 base::load(file = "day1_data.rda")
 
-# part 2 
+# part 2
 day1 <- stringr::str_split(day1, pattern = "   ")
-day1 <- data.frame(t(data.frame(data)))
+day1 <- data.frame(base::t(base::data.frame(day1)))
 query <- as.numeric(day1$X1)
 table <- data.frame(table(as.numeric(day1$X2)))
 
 total = 0
 for (i in 1:length(query)){
-  number = query[i]
-  if (nrow(table[table$Var1 == number,]) > 0){
+  number <- query[i]
+  if (nrow(table[table$Var1 == number, ] ) > 0) {
     total <- total + (number * table[table$Var1 == number,]$Freq)
   }
 }
 
-
-
-
-calculate_total <- function(query_value, table) {
-  number <- query_value
-  if (nrow(table[table$Var1 == number, ]) > 0) {
-    return(number * table[table$Var1 == number,]$Freq)
-  } else {
-    return(0)  # Return 0 if the condition is not met
-  }
-}
-
-total_results <- map_dbl(query, ~calculate_total(.x, table))
-total <- sum(total_results)
-print(total)
-
+total
