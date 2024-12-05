@@ -10,16 +10,16 @@ base::load("day2_data.rda")
 
 data <- tibble::as_tibble(day2)
 
-head(data)
+nrow(data)
 
 
 is_sequential <- function(sequence) {
   sequence <- as.numeric(sequence)
-  is_increasing <- all(diff(sequence))
-  is_decreasing <- all(diff(sequence))
+  is_increasing <- all(diff(sequence) > 0)
+  is_decreasing <- all(diff(sequence) < 0)
 
   if ((is_increasing || is_decreasing) &&
-        all(abs(diff(sequence)) >= 1 & abs(diff(sequence)) <= 3)) {
+      all(abs(diff(sequence)) >= 1 & abs(diff(sequence)) <= 3)) {
     return(TRUE)
   } else {
     return(FALSE)
@@ -43,4 +43,6 @@ data <- data %>%
   )
 
 data |>
-  filter(sequence_status == "Safe")
+  filter(sequence_status == "Safe") |>
+  nrow()
+  
