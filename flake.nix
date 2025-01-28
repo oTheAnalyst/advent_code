@@ -11,7 +11,6 @@
     rPackages = with pkgs.rPackages; [
       tidyverse
       tinytex
-      tlmgr
       quarto
       reactable
       rstudioapi
@@ -29,6 +28,7 @@
       buildInputs = with pkgs; [
         pandoc
         glibcLocales
+        tlmgr
         nix
         gnumake
         libgcc
