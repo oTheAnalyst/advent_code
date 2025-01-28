@@ -11,6 +11,7 @@
     rPackages = with pkgs.rPackages; [
       tidyverse
       tinytex
+      tlmgr
       quarto
       reactable
       rstudioapi
