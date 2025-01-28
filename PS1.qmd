@@ -11,7 +11,7 @@ execute:
 
 ## Background
 
-This document to targets two factors utlized accross all models in OBPP. It will primarly cover two methods used within the scripts, the first one was utlized during the period in which the sharedrive was active; The second method is going to be utlized in the future, once the sharedrive is decommissioned. This document will describe the current issues with the read & write method present accross OBBP.
+This document to targets two factors utilized across all models in OBPP. It will primally cover two methods used within the scripts, the first one was utilized during the period in which the sharedrive was active; The second method is going to be utilized in the future, once the sharedrive is decommissioned. This document will describe the current issues with the read & write method present across OBBP.
 
 
 ## Problem
