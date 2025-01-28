@@ -28,6 +28,7 @@
       buildInputs = with pkgs; [
         pandoc
         glibcLocales
+        quarto
         nix
         gnumake
         libgcc
