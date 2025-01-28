@@ -1,0 +1,25 @@
+---
+title: "Problem Statement for a Database Solution"
+author: "Michael V. Cumbo"
+format: pdf
+editor: visual
+execute:
+    eval: false
+---
+
+{{< pagebreak >}}
+
+## Background
+
+This document to targets two factors utlized accross all models in OBPP. It will primarly cover two methods used within the scripts, the first one was utlized during the period in which the sharedrive was active; The second method is going to be utlized in the future, once the sharedrive is decommissioned. This document will describe the current issues with the read & write method present accross OBBP.
+
+
+## Problem
+
+Currently data reads in many offices are sourced from sharedrive, this method involves building strings with and object set to retrieve the data.
+
+```{r}
+
+```
+
+

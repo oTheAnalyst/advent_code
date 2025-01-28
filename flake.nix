@@ -28,7 +28,6 @@
       buildInputs = with pkgs; [
         pandoc
         glibcLocales
-        tlmgr
         nix
         gnumake
         libgcc
